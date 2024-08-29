@@ -1,16 +1,16 @@
 "use client";
 
-import { useForm } from "react-hook-form";
 import { Button } from "@/components/Button";
-import { Input } from "@/components/Input";
-import { saveAboutAction, type SaveAboutBody } from "@/utils/actions/user";
 import {
   FormSection,
   FormSectionLeft,
   FormSectionRight,
   SubmitButtonWrapper,
 } from "@/components/Form";
+import { Input } from "@/components/Input";
+import { saveAboutAction, type SaveAboutBody } from "@/utils/actions/user";
 import { handleActionResult } from "@/utils/server-action";
+import { useForm } from "react-hook-form";
 
 export const AboutSectionForm = (props: { about?: string }) => {
   const {
